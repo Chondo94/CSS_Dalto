@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aprendiendo CSS</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<!-- 
+	en la metodologia ben, lo que se propone es crear un contenedor y a ese contenedor colocarle una clase, como
+	se puede observar a continuacion, tenemos nuestro contenedor llamado contact-form, ahora la idea es, que el 
+	elemento en este caso los input, lleven el nombre de la clase del contenedor para saber a cual pertenecen y 
+	agregado a esto lleve 2 guiones bajo con el nombre del elemento o etiqueta, en este caso le vamos a poner el 
+	nombre de input, porque son elementos(etiquetas) input y queda como a continuacion viendose de la forma
+	que explique es como se aplica la metodologia Ben.
+ -->
+	<div class="contact-form">
+		<input type="text" class="contact-form__input--active">
+		<input type="text" class="contact-form__input">
+		<input type="text" class="contact-form__input">
+<!-- 
+	cuando queremos aplicarle un estilo diferente a un elemento, por ejemplo a input tipo texto, podemos hacer lo 
+	siguiente, agregado al nombre de la clase se le coloca al final 2 guin medios y el nombre que queramos, cualquiera
+	en este caso vamos a utilizar activo, para que solo el primer input y el penultimo input de tipo texto lleven la 
+	letra de color rojo, para eso nos va quedar asi: contact-form__input--activo.
+-->
+		<input type="text" class="contact-form__input--active">
+		<input type="text" class="contact-form__input">
+		<input type="password" class="contact-form__input">
+	</div>
+
+<!-- 
+	Que pasa si por ejemplo, dentro de una etiqueta, tenemos otra etiqueta, como lo vamos a ver a continuacion, que tenemos
+	la etiqueta p y dentro la etiqueta h2, aca lo que se debe de hacer en vez de colocar 2guines bajos como se hace al inicio
+	para identifacar la etiqueta, lo que se hace es que se coloca 1 guion medio y el nombre de la etiqueta que esta adentro, 
+	veamos el ejemplo
+ -->
+	<div class="suscriber-form">
+		<p class="suscriber-form__p">
+			<h2 class="suscriber-form__p-h2">
+				Suscribe a mi canal de telegram
+			</h2>
+		</p>
+	</div>
+	<!-- 
+		lo que es 2 guion bajos, esos solo se trabaja por bloques, el cual es __, esto solo se aplica por bloques, como podemos
+		ver el ejemplo, tenemos dos bloques, pero se toma la clase madre del bloque y se le agrega los 2 guion bajos y hasta ahi,
+		lo que le sigue, ya es el elemento o etiqueta, y si hay dentro de ese elemento otra etiqueta, se agrega solo 1 guion medio,
+		y si se quiere diferencia para aplicarle estilo diferente, solo a ese elemente, se le agrega 2 guion medios seguidos de
+		la palabra clave.
+	 -->
+	 <div class="suscriber-youtube-form">
+		<p class="suscriber-youtube-form__p">
+			<h2 class="suscriber-youtube-form__p-h2">
+				Suscribe a mi canal de youtube
+			</h2>
+		</p>
+	</div>
+	<div class="go-facebook-form">
+		<p class="go-facebook-form__p">
+			<h2 class="go-facebook-form__p-h2">
+				Sigueme en facebook
+			</h2>
+		</p>
+	</div>
+
+</body>
+</html>
