@@ -1,0 +1,40 @@
+/* forma de sacar los valores por defecto */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.contact-form{
+    /* declaramos el tamano de la letra, nos queda de 25 pixeles */
+    font-size: 25px;
+}
+
+.contact-form__h2{
+    /* el (em) por defecto vale 16 pixeles, pero si nosotros le aplicamos el tamaño de pixeles, como vemos arriba
+    que le colocamos 25px, entonces 1 em va vales 25 pixles, ahorita para el ejemplo, le coloque 2 em, y lo que 
+    estamos diciendo aca es que el tamaño de letra va hacer 50px, ya que 1em=25px por como lo declare arriba. pero
+    ojo, por default los navegadores le pone 1em=16px */
+    font-size: 2em;
+    /* este es el estilo de letra */
+    font-family:serif;
+    /* este es el espacio de letra, por defecto la letra vale 1, cuando le colocamos 2 como en este ejemplo, nos va
+    abrir un espacio de medialetra mas para arriba y media letra mas para abajo. */
+    line-height: 2;
+    /* el weight es el grosor de las letras */
+    font-weight: 900;
+    /* color es para definir el color de la letra */
+    color: green;
+}
+
+/* 
+    para importar una nueva fuente solo basta con ir a google y buscar font(https://fonts.google.com/?selection.family=Lacquer&sidebar.open=true)
+    seleccionamos la fuente que nos gusta y 1) copiamos la url y la pegamos en nuestro head y 2)solo copiamos como la esta llamando y la colocamos
+    donde mas nos guste, si a todo el texto o donde nosotros queramos, veamos un ejemplo con un lorem.
+*/
+
+.contact-form__p{
+    font-size: 1em;
+    font-family: 'Lacquer', cursive;
+    font-weight: 400;
+}
