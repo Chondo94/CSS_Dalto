@@ -1,0 +1,44 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/*  
+ * IMPORTANTE, EXPLICACIÓN
+ * Como podemos observar, aca solo tengo un trozo del codigo que trae el documento normaliza
+ * esto lo hice con el fin de poder ver exactamente que fue lo que edite de este documento,
+ * viendo el curso, de ahi todo lo demas se deja tal cual como viene, para poderme deplazar 
+ * buscar lo que que quiero editar, solo preciono la tecla f3 y me aparece una barra de buscador
+ * escribo la palabra, que este caso fue "img" porque esta por enmedio y agrego o edito lo que
+ * quiera para esa etiqueta, agregando o quitando atributos css.
+*/
+
+/* Document
+   ========================================================================== */
+   * {
+    padding: 0;
+    margin: 0;
+    /* 
+     * el box-sizing: sirve para que la cajas no se nos haga mas grandes al momento que nosotros
+     * les aplicamos pading, por ejemplo, si una caja tiene 50 pixeles y nosotros le damos 
+     * 10 px de padding, la caja vendria a quedarnos de 60px, pero al momento que le aplicamos
+     * box-sizing: border-box; este se encargar de que le da los 10px de padding y como la caja 
+     * de 50 pixeles, le resta esos 10 y nos biene quedando de 40px, ya que 40px de la caja mas
+     * los 10 px de padding nos da una caja de 50px.
+    */
+    box-sizing: border-box;
+  }
+
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+  /* 
+  Este estilo es para que al momento de insertar una imagen, se nos acople al 100% tanto en la web
+  o en un smarphone.
+  */
+  max-width: 100%;
+}
