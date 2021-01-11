@@ -1,0 +1,87 @@
+.contact-form{
+    /* declaramos el tamano de la letra, nos queda de 25 pixeles */
+    font-size: 25px;
+}
+
+.contact-form__h2{
+    font-size: 2em;
+    font-family:serif;
+    line-height: 2;
+    font-weight: 900;
+    color: green;
+}
+
+.contact-form__p{
+    font-size: 1em;
+    font-family: 'Lacquer', cursive;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+/* 
+    00) Outline
+
+    INICIO
+    Este bloque de codigo fue para trabajar el el atributo CSS llamado (outline), este es parecido al borde, se ve igual a 
+    simplevista, pero tiene una gran diferencia, que este atributo no utiliza espacio, a diferencia del borde que ese si 
+    utiliza un espacio, que quiere decir esto, que por ejemplo el outline simplemente se ve y hasta ahi, pero el border
+    ese ocupa un espacio, que por ejemplo le puede reducir a las cajas, si no comprendo con lo que he explicado, toca leer
+    sobre este atributo, pero hasta aca creo que es entendible. 
+*/
+.caja1{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin:auto;
+    outline: 10px solid green;
+    box-sizing: content-box;
+}
+
+.caja2, .caja3, .caja4{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background:yellow;
+    margin:auto;
+    margin-bottom: 30px;
+}
+
+.caja4{
+    outline: 10px solid green;
+}
+
+/* 
+    FINALIZA LA PARTE DEL OUTLINE
+*/
+
+/* 
+    INICIO
+
+    01) Position (posicion)
+        Static, relative, Absolute, Fixed y sticky.
+        -STATIC: es la forma en que viene definida la posicion de un elemento, en pocas palabras es el default
+        cuan uno trabaja CSS y la posicion es estatica, quiere decir que no se ha trabajado la posicion ya que
+        se dejo tal cual como viene por defecto.
+*/
+
+.cajap{
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: yellow;
+}
+
+#caja5{
+    background: greenyellow;
+}
+#caja6{
+    background: yellow;
+}
+#caja7{
+    background: lightblue;
+}
+#caja8{
+    background: red;
+}
+

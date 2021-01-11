@@ -1,0 +1,42 @@
+1)  Existen dos tipos de elemento, los elementos en linea o elementos en bloque, esos son los dos tipos de caja
+    que existen y con los que se trabajan.
+    Elemento en bloque: son aquellas que ocupan el ancho total de la pagina o caja que los contiene, por 
+    ejemplo, si una caja tiene 10px, el elemento o etiqueta en bloque va ocupar los 10px de ancho, pero el
+    elemento en linea es lo contrario, veamos.
+    Elementos en linea: este se diferencia con el elemento en bloque, porque no ocupa todo el ancho total de la
+    pagina y tampoco si esta dentro de una caja, no ocupa el ancho total de la caja que lo contenga, sino que lo 
+    que hace es que se queda del tamaño segun sea el elemento.
+    ejemplo de elementos o etiquetas en bloque: "h2" este elemento o etiqueta es en bloque, ocupa todo el ancho.
+    "b" esta etiqueta o elemento es en linea, solo va ocupar el ancho que mida, en este caso el ancho de la letra b.
+
+2)  Propiedad display:inline-block:
+    Los elementos de caja ya sea en bloque y en linea tienen sus propiedades, como lo son el width y heigth (ancho y alto), 
+    la que se diferencia entre estos, es que el elemento el bloque si acepta que se le modifique el ancho y el alto, pero 
+    los elementos en linea no funciona esto, por eso es que usamos la propiedad display:inline-block, para que una
+    caja y elemento se comporte como en linea, pero que se le puedan aplicar propiedades que solo aceptan los 
+    elementos en bloque, como es la altura y el ancho.
+
+3)  Padding de Cajas:     
+    /*  
+     * Padding es el espacio que le damos entre la letra y la caja, es el espacio interno que tiene, y este se le
+     * aplica a los cuatro lados, pudiendose hacer de diferentes forma, la forma larga y tediosa es hacerlo asi: 
+     * padding-top:tantos px, padding-right: tantos px, paddign-bottom:tantos px y padding-left:tantos px. asi de
+     * esta forma le daríamos  el padding o margen inferior que llevan las cajas por cada lado que queramos como lo
+     * es (top-alto, rigth-derecha, bottom-abajo y left-izquierda. pero si queremos aplicar la forma mas cotidiana 
+     * y ligera, es de la siguiente manera: si le queremos aplicar un padding igual a los cuatro lados, bas con
+     * colocar padding:cantidad px que queramos (padding:10px), o si queremos aplicarle un paddign diferente a dos
+     * lados paralelos por ejemplo, queramos que arriba y abajo lleven un mismo padding y a la derecha e izquierda otro
+     * solo debemos de colocarlo de la forma siguiente padding: 20px 15px; aca lo que hacemos es darle 20px arriba y
+     * abajo y 15px a la derecha e izquierda. Si lo que queremos es darle un padding diferente a todos los lados se hace
+     * de la siguiente manera, empezando asi, 1 arriba, 2 derecha, 3 abajo y 4 izquierda, ese es el orden conforme se
+     * aplica y quedaria asi padding: 3px 6px 12px 21px, son cuatro numeros empezando por 1,2,3,4.
+    */
+
+4) line-heigth;
+    /* el line-height: es para darle un espacion a las letras en linea, esto quiere decir que al aplicarlete este
+       atributo, podre interactuar el espacio entre cada palabra que escriba.*/
+
+5) box-sizing:
+    /* el box-sizing: es para que nos mantenga el tamño origina que le demos a la caja, aunque le agreguemos padding
+       la caja se va adapatar a ese padding, sin aumentar mas el tamaño, por ejemplo si la caja es de 100px y le damos
+       un padding de 20px, la caja le va a dar los 20px y los 80 se adaptan, para que la caja al sumar quede de 100px */
