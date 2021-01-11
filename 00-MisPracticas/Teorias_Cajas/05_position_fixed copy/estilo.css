@@ -1,0 +1,58 @@
+/* ------------------------------------MIS PRACTICAS----------------------------------------- */
+/*  <!-- TEORIA DE CAJAS INICIO --> */
+
+/*
+  1) Position:
+    a) Static
+    b) Relative
+    c) Absolute
+    d) Fixed
+    e) Sticky
+*/
+
+/*
+    E) STICKY
+       La posicion STICKY es como la mescla de la posicion relativa y la fixed, en esta posicion lo que podemos hacer
+       es que le podemos declarar desde donde queremos que se nos quede quieta esa caja, por ejmplo si lo queremos 
+       desde el medio, ahi se nos va quedar fija, veamos un ejemplo. importante, para que se nos aplique el efecto
+       de la posicion fixed que nos quede fijada, debemos aplicarle un top, ya sea 0, 10 20 o el que nosotros queramos
+       asi que cuando llevemos a esa caja se nos va quedar fija con el top que le colocamos.
+*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+.caja-sticky{
+    background:rgb(255, 227, 104);
+    position:sticky;
+    top: 0;
+    
+}
+
+
+
+/*
+  2) z-index: 
+    Da conflicto Solo en elementos posicionados entre hijos y padres, 
+    por ejemplo una caja contenedora y otras cajas dentro de esa caja contenedora.
+*/
+
+/*
+  3) Display: 
+    Block
+    Inline
+
+    Inline-block
+    List-item
+    table-cell
+    table-row
+    table-column
+
+    Gird
+*/
+
+/*  <!-- TEORIA DE CAJAS FINAL --> */
+

@@ -1,0 +1,101 @@
+/* ------------------------------------MIS PRACTICAS----------------------------------------- */
+/*  <!-- TEORIA DE CAJAS INICIO --> */
+
+/*
+  1) Position:
+    a) Static
+    b) Relative
+    c) Absolute
+    d) Fixed
+    e) Sticky
+*/
+
+/*
+    C) ABSOLUTE
+       Position absolute, es muy parecido al position relative, pero lo diferencias 3 cosas las cuales son:
+       primero la posicion absoluta tiene como punto de referencia el vieport que es la pagina en blanco que nos
+       sale o si esta dentro de un contenedor, ese sera el punto de referenica, lo que quiere decir esto es que
+       se diferencia entre la posicion relativa en que no guarda su espacion donde esta y de ahi toma su punto de
+       referencia, otro punto inmportante es que donde este la posicion absoluta, si hay un objeto abajo, ese se 
+       sube, porque la posicion absoluta podriamos decir que es mas fuerte a la posicion static o que viene por default
+       si en realidad no comprendo esto cuando lo lea, mejor veo el video nuevamente https://www.youtube.com/watch?v=OWKXEJN67FE&ab_channel=SoyDalto
+       minuto 2:23:10 - Position Absolute, o leo algun articulo de internet sobre la posicion absoluta.
+
+*/
+div{
+    /* text-align: center;
+    font-weight: 100;
+    font-size: 30px; */
+    display: block;
+    background:yellow;
+    position:absolute;
+}
+
+.contenedor{
+    position:static;
+    border: 4px solid black;
+    margin:50px auto;
+    height: 450px;
+    width: 450px;
+    background:green;
+    position: relative;
+}
+
+div div{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+.caja1{
+}
+
+.caja2{
+    right: 0;
+}
+
+.caja3{
+    left: 0;
+    bottom: 0;
+}
+
+.caja4{
+    right: 0;
+    bottom: 0;
+}
+
+/*
+    Si quisieramos centrar una caja, una forma de hacerlo es dandole 0 a los 4 lados y que tambien tenga un margen auto
+    veamos como nos queda. es la forma mas recomendada, esto no funciona cuando trabajamos con grid o layout.
+*/
+
+.caja5{
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*
+  2) z-index: 
+    Da conflicto Solo en elementos posicionados entre hijos y padres, 
+    por ejemplo una caja contenedora y otras cajas dentro de esa caja contenedora.
+*/
+
+/*
+  3) Display: 
+    Block
+    Inline
+
+    Inline-block
+    List-item
+    table-cell
+    table-row
+    table-column
+
+    Gird
+*/
+
+/*  <!-- TEORIA DE CAJAS FINAL --> */
+

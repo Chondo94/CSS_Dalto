@@ -1,0 +1,48 @@
+/* ------------------------------------MIS PRACTICAS----------------------------------------- */
+/*  <!-- TEORIA DE CAJAS INICIO --> */
+
+h2{
+    background-color: yellow;
+    display: inline-block;
+    /*  
+     * Padding es el espacio que le damos entre la letra y la caja, es el espacio interno que tiene, y este se le
+     * aplica a los cuatro lados, pudiendose hacer de diferentes forma, la forma larga y tediosa es hacerlo asi: 
+     * padding-top:tantos px, padding-right: tantos px, paddign-bottom:tantos px y padding-left:tantos px. asi de
+     * esta forma le daríamos  el padding o margen inferior que llevan las cajas por cada lado que queramos como lo
+     * es (top-alto, rigth-derecha, bottom-abajo y left-izquierda. pero si queremos aplicar la forma mas cotidiana 
+     * y ligera, es de la siguiente manera: si le queremos aplicar un padding igual a los cuatro lados, bas con
+     * colocar padding:cantidad px que queramos (padding:10px), o si queremos aplicarle un paddign diferente a dos
+     * lados paralelos por ejemplo, queramos que arriba y abajo lleven un mismo padding y a la derecha e izquierda otro
+     * solo debemos de colocarlo de la forma siguiente padding: 20px 15px; aca lo que hacemos es darle 20px arriba y
+     * abajo y 15px a la derecha e izquierda. Si lo que queremos es darle un padding diferente a todos los lados se hace
+     * de la siguiente manera, empezando asi, 1 arriba, 2 derecha, 3 abajo y 4 izquierda, ese es el orden conforme se
+     * aplica y quedaria asi padding: 3px 6px 12px 21px, son cuatro numeros empezando por 1,2,3,4.
+    */
+    padding: 30px 35px;
+    height: 154px;
+    /* el line-height: es para darle un espacion a las letras en linea, esto quiere decir que al aplicarlete este
+       atributo, podre interactuar el espacio entre cada palabra que escriba.*/
+    line-height: 20px;
+    width: 148px;
+    /* el box-sizing: es para que nos mantenga el tamño origina que le demos a la caja, aunque le agreguemos padding
+       la caja se va adapatar a ese padding, sin aumentar mas el tamaño, por ejemplo si la caja es de 100px y le damos
+       un padding de 20px, la caja le va a dar los 20px y los 80 se adaptan, para que la caja al sumar quede de 100px */
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px;
+    border-radius: 2em;
+    /* border: 3px solid rgb(187, 160, 5); */
+    /* box-shadow sirve para aplicarle sombra a un elemente, la forma en que se aplica es de la siguiente forma, 1. primero
+    se aplica los pixeles al eje y (arriba y abajo) 2. luego al eje x (derecha e izquierda, 3. luego se aplica el tamaño del 
+    desenfoque o que tan grande va a ser la sombra, 4. luego el tamaño del borde y 5. por ultimo el color. veamos un ejemplo:
+    box'shadow 3px 8px 21px 0px black*/
+    box-shadow: 15px 19px 10px -2px #000;
+    /* Text-shadow es lo mismo que el box-shadow: pero no lleva la 4ta. propiedad que es de border y solo que este no es 
+    aplicado a cajas, sino que al texto. */
+    text-shadow: 12px 59px 3px #000;
+    /* transfor es para transformar, en este caso le aplicacmos el rotate que sirve para rotar y abajo esta el ejemplo. */
+    transform: rotate(-15deg);
+    margin-bottom: 45px;
+}
+
+/*  <!-- TEORIA DE CAJAS FINAL --> */

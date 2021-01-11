@@ -1,0 +1,37 @@
+/* ------------------------------------MIS PRACTICAS----------------------------------------- */
+/*  <!-- TEORIA DE CAJAS INICIO --> */
+div{
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+/*
+  0) OUTLINE
+  
+  * El outline es parecido al border, pero la diferencia que tiene es que no ocupa un espaccio real en el
+    DOM, por ejemplo, se visualiza pero no esta ocupando ningun espacio. lo que hace es resaltar.
+  * Con el margin:auto; lo que hace es como sentrarnos, ese calculo lo hace el navegador. pero nos sentra solo de los lados
+    de arriba y de abajo lo deja como este.
+  * El outline se aplica en la segunda caja para remarcarla, como se puede observar sirve para resaltar, pero si en vez
+    de eso aplicamos un border, lo que el border hace es que reduce la caja para aplicar el border que se le esta indicando
+    eso si, solo cuando ya le aplicamos el box-sizing: border-box; de lo contrario, se aplica por afuera, haciendo ver mas
+    grande la caja, en este caso el oultine se ve por afuera, pero no altero la caja para nada.
+*/
+.outline{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+#outline0{
+    margin-left: 60px;
+}
+
+#outline2{
+    outline: 10px solid black;
+}
+
+
+/*  <!-- TEORIA DE CAJAS FINAL --> */

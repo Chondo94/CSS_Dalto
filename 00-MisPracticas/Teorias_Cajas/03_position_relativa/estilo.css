@@ -1,0 +1,99 @@
+/* ------------------------------------MIS PRACTICAS----------------------------------------- */
+/*  <!-- TEORIA DE CAJAS INICIO --> */
+*{
+    margin: 50px;
+}
+div{
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+/*
+  1) Position:
+    a) Static
+    b) Relative
+    c) Absolute
+    d) Fixed
+    e) Sticky
+*/
+
+/* 
+    a) RELATIVA
+    esta posicion, es que optiene una posicion relativa, sus principales caracteristicas es que optiene
+    4 atributos principales, los cuales son el top, left, rigth y bottom, entre estos cuatros los que 
+    tienen mas fuerza sobre los demas son el top y el left. otra cosa que obtiene es el z-index, esto lo
+    obtienen todas la cajas al declararles una posicion, el z-index no es nada mas y nada menos que la
+    posicion sobre cada caja, por ejemplo una caja sobre otra, y la caja que tenga el z-index mas alto
+    es la que va estar sobre la caja o todas las cajas, para aplicarlo solo se le da el numero, es 
+    recomendable empezar con 99 o 999 por si despues si tiene que arreglar alguna caja en respecto a la 
+    posicion, esta se agrega un numero mas o menos y no toca alterar todas la cajas. por ultimo cabe mencionar
+    que cuando una caja esta dentro de un contenedor, la unica forma hasta el momento, para que el contendor
+    este sobre la caja que contiene, es no colocarle z-index al contenor y colocale un z-index -1 a la caja
+    que esta dentro del contenedor. 
+*/
+.cajas{
+    width: 120px;
+    height: 120px;
+    display:block;
+    background-color: yellow;
+}
+
+#caja1{
+    margin-top: 40px;
+    background-color: orange;
+}
+
+#caja2{
+    background-color: green;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+#caja3{
+    background-color: lightblue;
+}
+
+.contenedor{
+    width: 250px;
+    height: 250px;
+    display:block;
+    background: blue;
+    margin: 25px;
+    position: relative;
+}
+#caja4{
+    width: 120px;
+    height: 120px;
+    background: black;
+    position: relative;
+    top: -33px;
+    left: -138px;
+    z-index: -1;
+}
+
+/*
+  2) z-index: 
+    Da conflicto Solo en elementos posicionados entre hijos y padres, 
+    por ejemplo una caja contenedora y otras cajas dentro de esa caja contenedora.
+*/
+
+/*
+  3) Display: 
+    Block
+    Inline
+
+    Inline-block
+    List-item
+    table-cell
+    table-row
+    table-column
+
+    Gird
+*/
+
+/*  <!-- TEORIA DE CAJAS FINAL --> */
+
+
+

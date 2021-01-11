@@ -1,0 +1,58 @@
+/* ------------------------------------MIS PRACTICAS----------------------------------------- */
+/*  <!-- TEORIA DE CAJAS INICIO --> */
+
+/*
+  1) Position:
+    a) Static
+    b) Relative
+    c) Absolute
+    d) Fixed
+    e) Sticky
+*/
+
+/*
+    D) FIXED
+       La posicion fixe, cuando la utilizamos en un div o contendor, tiene todas las propiedades de la misma 
+       posiscion que absolute, pero lo que diferencia al fixed es que este se queda fijo, por ejemplo si tengo
+       un navbar de menu y quiero que se me quede fija, aplico esta posicion y me quedara fijo.
+*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+body{
+    padding-top: 100px;
+}
+
+.caja-fixed{
+    background:rgb(255, 227, 104);
+    position:fixed;
+    margin: -143px;
+}
+
+
+
+/*
+  2) z-index: 
+    Da conflicto Solo en elementos posicionados entre hijos y padres, 
+    por ejemplo una caja contenedora y otras cajas dentro de esa caja contenedora.
+*/
+
+/*
+  3) Display: 
+    Block
+    Inline
+
+    Inline-block
+    List-item
+    table-cell
+    table-row
+    table-column
+
+    Gird
+*/
+
+/*  <!-- TEORIA DE CAJAS FINAL --> */
+
